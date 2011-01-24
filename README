@@ -1,0 +1,15 @@
+Checkscripts for Sun Solaris. 
+
+Scripts are Nagios compliant.
+
+
+check_disk_usage.pl: Checks the used size of a mounted disk device by using UNIX 'df'
+
+	Usage: ./check_disk_usage.pl -f <Mountpoint> -c <Critical size MB> -w <Warning size MB> [-p]
+		-p: Include performance data to the output
+
+
+check_solaris_swap.pl: Checks the used swap space
+
+	Usage: ./check_solaris_swap.pl -c <1-100> -w <1-100> [-p]
+		-p: Include performance data to the output
